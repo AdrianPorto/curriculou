@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import CardModel from './components/card-model/index.js';
-import imagem1 from "./logo.png";
-
+import CurriculoOne from './img/curriculo1.jpg'
+import CurriculoTwo from './img/curriculo2.jpg'
+import CurriculoThree from './img/curriculo3.jpg'
+import CurriculoFour from './img/curriculo4.jpg'
 function App() 
 {
   return (
@@ -28,15 +30,15 @@ function App()
         <div className='text-center text-4xl' >Modelos</div>
         <div className='flex  flex-row justify-center mt-20'>
           <div className='mr-32'>
-           <CardModel src={imagem1} />
+           <CardModel src={CurriculoOne} />
           </div>
-             <CardModel src={imagem1} />
+             <CardModel src={CurriculoTwo} />
         </div>
        <div className='flex flex-row justify-center mt-20'>
           <div className='mr-32'>
-            <CardModel src={imagem1} />
+            <CardModel src={CurriculoThree} />
           </div>
-            <CardModel src={imagem1} />
+            <CardModel src={CurriculoFour} />
         </div>
       </div>
     </div>
