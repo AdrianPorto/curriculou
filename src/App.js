@@ -69,9 +69,9 @@ function App()
 
       <div className='flex flex-1 flex-col justify-center mt-32 text-center items-center'>
         <div className='text-4xl'>Diga-nos sobre o Curriculou</div>
-        <textarea className='w-[1030px] border-[2px] shadow-2xl  h-28  rounded-2xl text-xl mt-10 p-3'
+        <textarea className='w-[1030px] border-[2px] shadow-2xl  h-44  rounded-2xl text-xl mt-10 p-3'
           placeholder='Digite aqui...'></textarea>
-        <button className='w-[1030px] h-20 mt-10 rounded-full bg-[#669FD6] hover:bg-orange-600
+        <button className='w-[700px] h-20 mt-10 rounded-full shadow-xl shadow-gray-300  bg-[#669FD6] hover:bg-orange-600
            duration-700 text-3xl text-white font-bold'>Enviar avaliação</button>
       </div>
     
