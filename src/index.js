@@ -4,10 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'animate.css';
+import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
+import Main from "./pages/main"
+import Minimalista from "./pages/minimalista"
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main/>
+  },
+  {
+    path: "/minimalista",
+    element: <Minimalista/>
+  }
+])
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>
 );
 
