@@ -56,13 +56,13 @@ function Main()
           <div className='mr-32'>
             <CardModel src={CurriculoOne} link={"/minimalista"} />
           </div>
-             <CardModel src={CurriculoTwo}  />
+             <CardModel src={CurriculoTwo} link={"/tecnologico"}   />
         </div>
        <div className='flex flex-row justify-center mt-20'>
           <div className='mr-32'>
-            <CardModel src={CurriculoThree} />
+            <CardModel src={CurriculoThree} link={"/design"}  />
           </div>
-            <CardModel src={CurriculoFour} />
+            <CardModel src={CurriculoFour} link={"/moda"} />
         </div>
       
       </div>

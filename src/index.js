@@ -7,6 +7,9 @@ import 'animate.css';
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
 import Main from "./pages/main"
 import Minimalista from "./pages/minimalista"
+import Tecnologico from './pages/tecnologico';
+import Design from './pages/design';
+import Moda from './pages/moda';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,6 +22,18 @@ const router = createBrowserRouter([
   {
     path: "/minimalista",
     element: <Minimalista/>
+  },
+    {
+    path: "/tecnologico",
+    element: <Tecnologico/>
+  },
+        {
+    path: "/design",
+    element: <Design/>
+  },
+      {
+    path: "/moda",
+    element: <Moda/>
   }
 ])
 root.render(

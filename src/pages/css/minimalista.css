@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+#name {
+  font-family: "League Gothic", monospace;
+  letter-spacing: 2px;
+  border-style: none;
+}
+#titulo {
+  font-family: "Montserrat", monospace;
+  letter-spacing: 2px;
+}
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+textarea {
+  resize: none;
+}
