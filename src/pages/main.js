@@ -1,11 +1,10 @@
-
-import '../App.css';
-import CardModel from '../components/card-model/index.js';
-import CurriculoOne from '../img/curriculo1.jpg'
-import CurriculoTwo from '../img/curriculo2.jpg'
-import CurriculoThree from '../img/curriculo3.jpg'
-import CurriculoFour from '../img/curriculo4.jpg'
-import Instagram from '../img/instagram.png'
+import "../App.css";
+import CardModel from "../components/card-model/index.js";
+import CurriculoOne from "../img/curriculo1.jpg";
+import CurriculoTwo from "../img/curriculo2.jpg";
+import CurriculoThree from "../img/curriculo3.jpg";
+import CurriculoFour from "../img/curriculo4.jpg";
+import Instagram from "../img/instagram.png";
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -25,68 +24,86 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-function Main() 
-{
+function Main() {
   return (
-    
     <div className="w-screen h-screen ">
-        <div className=' text-6xl mt-10 w-screen text-center animate__fadeInDown animate__animated' id="logo">
-  Curriculou
+      <div
+        className=" text-6xl mt-10 w-screen text-center animate__fadeInDown animate__animated"
+        id="logo"
+      >
+        Curriculou
       </div>
-      <div className='flex flex-row justify-center items-center '>
-        <div className='flex flex-col w-[500px] justify-center animate__animated  animate__fadeInDown '>
-          <div className='text-4xl flex  pt-20 justify-center '>Crie agora o seu <br></br>
-            Curriculo de maneira <br></br>simples e rápida!</div>
-          <a href='#modelos' className='text-center flex flex-1 justify-center '>
-          <div className='w-[350px] h-14 rounded-full text-xl    mt-6 text-white font-bold  hover:bg-orange-600
-           hover:scale-110 duration-700 bg-[#669FD6] pt-3' >
-            Selecionar o Modelo
+      <div className="flex flex-row justify-center items-center ">
+        <div className="flex flex-col w-[500px] justify-center animate__animated  animate__fadeInDown ">
+          <div className="text-4xl flex  pt-20 justify-center ">
+            Crie agora o seu <br></br>
+            Curriculo de maneira <br></br>simples e rápida!
           </div>
-            </a>
+          <a
+            href="#modelos"
+            className="text-center flex flex-1 justify-center "
+          >
+            <div
+              className="w-[350px] h-14 rounded-full text-xl    mt-6 text-white font-bold  hover:bg-orange-600
+           hover:scale-110 duration-700 bg-[#669FD6] pt-3"
+            >
+              Selecionar o Modelo
+            </div>
+          </a>
         </div>
-       
 
-          <img src="./vetor.jpg" className='w-[600px] mt-2 animate__animated animate__fadeIn'></img>
-  
+        <img
+          src="./vetor.jpg"
+          className="w-[600px] mt-2 animate__animated animate__fadeIn"
+        ></img>
       </div>
 
-      <div className='mt-20' id='modelos'>
-        <div className='text-center text-4xl' >Modelos</div>
-        <div className='flex  flex-row justify-center mt-20'>
-          <div className='mr-32'>
+      <div className="mt-20" id="modelos">
+        <div className="text-center text-4xl">Modelos</div>
+        <div className="flex  flex-row justify-center mt-20">
+          <div className="mr-32">
             <CardModel src={CurriculoOne} link={"/minimalista"} />
           </div>
-             <CardModel src={CurriculoTwo} link={"/tecnologico"}   />
+          <CardModel src={CurriculoTwo} link={"/tecnologico"} />
         </div>
-       <div className='flex flex-row justify-center mt-20'>
-          <div className='mr-32'>
-            <CardModel src={CurriculoThree} link={"/design"}  />
+        <div className="flex flex-row justify-center mt-20">
+          <div className="mr-32">
+            <CardModel src={CurriculoThree} link={"/design"} />
           </div>
-            <CardModel src={CurriculoFour} link={"/moda"} />
+          <CardModel src={CurriculoFour} link={"/moda"} />
         </div>
-      
       </div>
 
-      <div className='flex flex-1 flex-col justify-center mt-32 text-center items-center'>
-        <div className='text-4xl'>Diga-nos sobre o Curriculou</div>
-        <textarea className='w-[1030px] border-[2px] shadow-2xl  h-44  rounded-2xl text-xl mt-10 p-3'
-          placeholder='Digite aqui...'></textarea>
-        <button className='w-[700px] h-20 mt-10 rounded-full shadow-xl shadow-gray-300  bg-[#669FD6] hover:bg-orange-600
-           duration-700 text-3xl text-white font-bold'>Enviar avaliação</button>
+      <div className="flex flex-1 flex-col justify-center mt-32 text-center items-center">
+        <div className="text-4xl">Diga-nos sobre o Curriculou</div>
+        <textarea
+          className="w-[1030px] border-[2px] shadow-2xl  h-44  rounded-2xl text-xl mt-10 p-3"
+          placeholder="Digite aqui..."
+        ></textarea>
+        <button
+          className="w-[700px] h-20 mt-10 rounded-full shadow-xl shadow-gray-300  bg-[#669FD6] hover:bg-orange-600
+           duration-700 text-3xl text-white font-bold"
+        >
+          Enviar avaliação
+        </button>
       </div>
-    
-      <div className='mt-16 text-center '>
-        <div className='text-3xl text-center'>Veja novidades sobre o <br></br>Curriculou no nosso Instagram</div>
-        
-        <a src="" className='flex flex-1 justify-center mt-10 '>
-          <img className='w-32 hover:scale-125 duration-700 cursor-pointer ' src={Instagram}></img>
+
+      <div className="mt-16 text-center ">
+        <div className="text-3xl text-center">
+          Veja novidades sobre o <br></br>Curriculou no nosso Instagram
+        </div>
+
+        <a src="" className="flex flex-1 justify-center mt-10 ">
+          <img
+            className="w-32 hover:scale-125 duration-700 cursor-pointer "
+            src={Instagram}
+          ></img>
         </a>
       </div>
-      <div className='text-center text-gray-500 mt-10 text-xl'>
+      <div className="text-center text-gray-500 mt-10 text-xl">
         Curriculou @ 2023 - Todos os direitos reservados.
-        </div>
+      </div>
     </div>
-    
   );
 }
 
