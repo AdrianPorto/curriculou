@@ -6,7 +6,6 @@ const CurriculoModel = () => {
     return (
         <div className=''>
             <Navbar></Navbar>
-    
         </div>
     );
 }
