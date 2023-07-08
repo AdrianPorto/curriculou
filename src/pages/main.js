@@ -77,13 +77,13 @@ function Main() {
           <div className="mr-32 mobile:mr-0">
             <CardModel src={CurriculoOne} link={"/minimalista"} />
           </div>
-          <CardModel src={CurriculoTwo}  />
+          <CardModel src={CurriculoTwo} disabled={true}   />
         </div>
         <div className="flex flex-row justify-center mt-20  mobile:flex-col mobile:space-y-20 mobile:items-center ">
           <div className="mr-32 mobile:mr-0">
-            <CardModel src={CurriculoThree} link={""} />
+            <CardModel src={CurriculoThree} link={""}  disabled={true}    />
           </div>
-          <CardModel src={CurriculoFour} link={""} />
+          <CardModel src={CurriculoFour} link={""}  disabled={true}   />
         </div>
       </div>
 
