@@ -29,18 +29,18 @@ const router = createBrowserRouter([
     element: <Minimalista 
     />
   },
-    {
-    path: "/tecnologico",
-    element: <Tecnologico/>
-  },
-        {
-    path: "/design",
-    element: <Design/>
-  },
-      {
-    path: "/moda",
-    element: <Moda/>
-  },
+  //   {
+  //   path: "/tecnologico",
+  //   element: <Tecnologico/>
+  // },
+  //       {
+  //   path: "/design",
+  //   element: <Design/>
+  // },
+  //     {
+  //   path: "/moda",
+  //   element: <Moda/>
+  // },
        {
     path: "/minimalista/pdf",
     element: <Pdf ></Pdf>
