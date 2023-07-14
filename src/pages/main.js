@@ -106,12 +106,15 @@ function Main() {
           Veja novidades sobre o <br></br>Curriculou no nosso Instagram
         </div>
 
-        <a src="https://www.instagram.com/curriculou.ofc/" className="flex flex-1 justify-center mt-10 ">
+
+        <div className="flex  justify-center">  
+        <a href="https://www.instagram.com/curriculou.ofc/"  className="  justify-center mt-10 ">
           <img
             className="w-32 hover:scale-125 duration-700 cursor-pointer "
             src={Instagram}
-          ></img>
+            ></img>
         </a>
+            </div>
       </div>
       <div className="text-center text-gray-500 mt-10 text-xl">
         Curriculou @ 2023 - Todos os direitos reservados.
