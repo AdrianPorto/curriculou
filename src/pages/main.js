@@ -106,7 +106,7 @@ function Main() {
           Veja novidades sobre o <br></br>Curriculou no nosso Instagram
         </div>
 
-        <a src="" className="flex flex-1 justify-center mt-10 ">
+        <a src="https://www.instagram.com/curriculou.ofc/" className="flex flex-1 justify-center mt-10 ">
           <img
             className="w-32 hover:scale-125 duration-700 cursor-pointer "
             src={Instagram}
