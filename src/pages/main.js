@@ -7,6 +7,7 @@ import CurriculoThree from "../img/curriculo3.jpg";
 import CurriculoFour from "../img/curriculo4.jpg";
 import Instagram from "../img/instagram.png";
 import { useState } from "react";
+import { useRef } from "react";
 
 function Main() {
   function reveal() {
@@ -35,6 +36,7 @@ function Main() {
   }, []);
 
   window.addEventListener("scroll", reveal);
+
   return (
     <div className="w-screen h-screen mobile:w-[100vw] mobile:w-max-[768px] ">
       <div
@@ -73,28 +75,35 @@ function Main() {
         <div className="text-center text-5xl " id="title">
           Modelos
         </div>
-        <div className="flex  flex-row justify-center mt-20 mobile:flex-col mobile:space-y-20 mobile:items-center mobile:reveal ">
+        <div
+          className="flex  flex-row justify-center mt-20 mobile:flex-col
+         mobile:animate__animated animate__fadeInUp 
+        mobile:space-y-20 mobile:items-center  "
+        >
           <div className="mr-32 mobile:mr-0">
             <CardModel src={CurriculoOne} link={"/minimalista"} />
           </div>
-          <CardModel src={CurriculoTwo} disabled={true}   />
+          <CardModel src={CurriculoTwo} disabled={true} />
         </div>
         <div className="flex flex-row justify-center mt-20  mobile:flex-col mobile:space-y-20 mobile:items-center ">
           <div className="mr-32 mobile:mr-0">
-            <CardModel src={CurriculoThree} link={""}  disabled={true}    />
+            <CardModel src={CurriculoThree} link={""} disabled={true} />
           </div>
-          <CardModel src={CurriculoFour} link={""}  disabled={true}   />
+          <CardModel src={CurriculoFour} link={""} disabled={true} />
         </div>
       </div>
 
       <div className="flex flex-1 flex-col justify-center mt-32 text-center items-center ">
-        <div className="text-4xl">Diga-nos sobre o Curriculou</div>
+        <div className="text-4xl font-medium">Diga-nos sobre o Curriculou</div>
         <textarea
-          className="w-[1030px] border-[2px] shadow-2xl  h-44  rounded-2xl text-xl mt-10 p-3"
+          className="w-[1030px] mobile:w-[90vw] shadow-2xl  h-44    ring-[2px]  ring-gray-200 
+             focus:shadow-2xl   rounded-2xl text-xl mt-10 p-4"
           placeholder="Digite aqui..."
         ></textarea>
         <button
-          className="w-[700px] h-20 mt-10 rounded-full shadow-xl shadow-gray-300  bg-[#669FD6] hover:bg-orange-600
+          className="w-[700px] mobile:w-[90vw] h-20 mt-10 rounded-full shadow-xl  shadow-gray-300
+         bg-[#669FD6]
+           hover:bg-orange-600
            duration-700 text-3xl text-white font-bold"
         >
           Enviar avaliação
@@ -106,15 +115,17 @@ function Main() {
           Veja novidades sobre o <br></br>Curriculou no nosso Instagram
         </div>
 
-
-        <div className="flex  justify-center">  
-        <a href="https://www.instagram.com/curriculou.ofc/"  className="  justify-center mt-10 ">
-          <img
-            className="w-32 hover:scale-125 duration-700 cursor-pointer "
-            src={Instagram}
+        <div className="flex  justify-center">
+          <a
+            href="https://www.instagram.com/curriculou.ofc/"
+            className="  justify-center mt-10 "
+          >
+            <img
+              className="w-32 hover:scale-125 duration-700 cursor-pointer "
+              src={Instagram}
             ></img>
-        </a>
-            </div>
+          </a>
+        </div>
       </div>
       <div className="text-center text-gray-500 mt-10 text-xl">
         Curriculou @ 2023 - Todos os direitos reservados.
